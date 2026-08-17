@@ -5,10 +5,23 @@
 #include "VALU_tb__pch.h"
 #include "VALU_tb___024root.h"
 
+VL_ATTR_COLD void VALU_tb___024root___eval_static__TOP(VALU_tb___024root* vlSelf);
+
 VL_ATTR_COLD void VALU_tb___024root___eval_static(VALU_tb___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     VALU_tb__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    VALU_tb___024root___eval_static\n"); );
+    // Body
+    VALU_tb___024root___eval_static__TOP(vlSelf);
+}
+
+VL_ATTR_COLD void VALU_tb___024root___eval_static__TOP(VALU_tb___024root* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    VALU_tb__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+    VALU_tb___024root___eval_static__TOP\n"); );
+    // Body
+    vlSelf->ALU_tb__DOT__pass_count = 0U;
+    vlSelf->ALU_tb__DOT__fail_count = 0U;
 }
 
 VL_ATTR_COLD void VALU_tb___024root___eval_final(VALU_tb___024root* vlSelf) {
@@ -132,4 +145,6 @@ VL_ATTR_COLD void VALU_tb___024root___ctor_var_reset(VALU_tb___024root* vlSelf) 
     vlSelf->ALU_tb__DOT__b = VL_RAND_RESET_I(32);
     vlSelf->ALU_tb__DOT__alu_select = VL_RAND_RESET_I(4);
     vlSelf->ALU_tb__DOT__result = VL_RAND_RESET_I(32);
+    vlSelf->ALU_tb__DOT__pass_count = 0;
+    vlSelf->ALU_tb__DOT__fail_count = 0;
     }
