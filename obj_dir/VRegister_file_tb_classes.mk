@@ -2,7 +2,7 @@
 # DESCRIPTION: Verilator output: Make include file with class lists
 #
 # This file lists generated Verilated files, for including in higher level makefiles.
-# See Valutb.mk for the caller.
+# See VRegister_file_tb.mk for the caller.
 
 ### Switches...
 # C11 constructs required?  0/1 (always on now)
@@ -23,23 +23,23 @@ VM_TRACE_FST = 0
 ### Object file lists...
 # Generated module classes, fast-path, compile with highest optimization
 VM_CLASSES_FAST += \
-	Valutb \
-	Valutb___024root__DepSet_h8f4d5e87__0 \
-	Valutb___024root__DepSet_ha70d38db__0 \
-	Valutb__main \
+	VRegister_file_tb \
+	VRegister_file_tb___024root__DepSet_h9546a102__0 \
+	VRegister_file_tb___024root__DepSet_hb3b0a1c6__0 \
+	VRegister_file_tb__main \
 
 # Generated module classes, non-fast-path, compile with low/medium optimization
 VM_CLASSES_SLOW += \
-	Valutb___024root__Slow \
-	Valutb___024root__DepSet_h8f4d5e87__0__Slow \
-	Valutb___024root__DepSet_ha70d38db__0__Slow \
+	VRegister_file_tb___024root__Slow \
+	VRegister_file_tb___024root__DepSet_h9546a102__0__Slow \
+	VRegister_file_tb___024root__DepSet_hb3b0a1c6__0__Slow \
 
 # Generated support classes, fast-path, compile with highest optimization
 VM_SUPPORT_FAST += \
 
 # Generated support classes, non-fast-path, compile with low/medium optimization
 VM_SUPPORT_SLOW += \
-	Valutb__Syms \
+	VRegister_file_tb__Syms \
 
 # Global classes, need linked once per executable, fast-path, compile with highest optimization
 VM_GLOBAL_FAST += \

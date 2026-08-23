@@ -4,32 +4,32 @@
 // Internal details; most calling programs do not need this header,
 // unless using verilator public meta comments.
 
-#ifndef VERILATED_VALUTB__SYMS_H_
-#define VERILATED_VALUTB__SYMS_H_  // guard
+#ifndef VERILATED_VREGISTER_FILE__SYMS_H_
+#define VERILATED_VREGISTER_FILE__SYMS_H_  // guard
 
 #include "verilated.h"
 
 // INCLUDE MODEL CLASS
 
-#include "Valutb.h"
+#include "VRegister_file.h"
 
 // INCLUDE MODULE CLASSES
-#include "Valutb___024root.h"
+#include "VRegister_file___024root.h"
 
 // SYMS CLASS (contains all model state)
-class alignas(VL_CACHE_LINE_BYTES)Valutb__Syms final : public VerilatedSyms {
+class alignas(VL_CACHE_LINE_BYTES)VRegister_file__Syms final : public VerilatedSyms {
   public:
     // INTERNAL STATE
-    Valutb* const __Vm_modelp;
+    VRegister_file* const __Vm_modelp;
     VlDeleter __Vm_deleter;
     bool __Vm_didInit = false;
 
     // MODULE INSTANCE STATE
-    Valutb___024root               TOP;
+    VRegister_file___024root       TOP;
 
     // CONSTRUCTORS
-    Valutb__Syms(VerilatedContext* contextp, const char* namep, Valutb* modelp);
-    ~Valutb__Syms();
+    VRegister_file__Syms(VerilatedContext* contextp, const char* namep, VRegister_file* modelp);
+    ~VRegister_file__Syms();
 
     // METHODS
     const char* name() { return TOP.name(); }

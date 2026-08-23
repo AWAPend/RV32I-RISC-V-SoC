@@ -5,19 +5,19 @@
 // The class here is then constructed to instantiate the design.
 // See the Verilator manual for examples.
 
-#ifndef VERILATED_VALUTB_H_
-#define VERILATED_VALUTB_H_  // guard
+#ifndef VERILATED_VREGISTER_FILE_TB_H_
+#define VERILATED_VREGISTER_FILE_TB_H_  // guard
 
 #include "verilated.h"
 
-class Valutb__Syms;
-class Valutb___024root;
+class VRegister_file_tb__Syms;
+class VRegister_file_tb___024root;
 
 // This class is the main interface to the Verilated model
-class alignas(VL_CACHE_LINE_BYTES) Valutb VL_NOT_FINAL : public VerilatedModel {
+class alignas(VL_CACHE_LINE_BYTES) VRegister_file_tb VL_NOT_FINAL : public VerilatedModel {
   private:
     // Symbol table holding complete model state (owned by this class)
-    Valutb__Syms* const vlSymsp;
+    VRegister_file_tb__Syms* const vlSymsp;
 
   public:
 
@@ -31,19 +31,19 @@ class alignas(VL_CACHE_LINE_BYTES) Valutb VL_NOT_FINAL : public VerilatedModel {
 
     // Root instance pointer to allow access to model internals,
     // including inlined /* verilator public_flat_* */ items.
-    Valutb___024root* const rootp;
+    VRegister_file_tb___024root* const rootp;
 
     // CONSTRUCTORS
     /// Construct the model; called by application code
     /// If contextp is null, then the model will use the default global context
     /// If name is "", then makes a wrapper with a
     /// single model invisible with respect to DPI scope names.
-    explicit Valutb(VerilatedContext* contextp, const char* name = "TOP");
-    explicit Valutb(const char* name = "TOP");
+    explicit VRegister_file_tb(VerilatedContext* contextp, const char* name = "TOP");
+    explicit VRegister_file_tb(const char* name = "TOP");
     /// Destroy the model; called (often implicitly) by application code
-    virtual ~Valutb();
+    virtual ~VRegister_file_tb();
   private:
-    VL_UNCOPYABLE(Valutb);  ///< Copying not allowed
+    VL_UNCOPYABLE(VRegister_file_tb);  ///< Copying not allowed
 
   public:
     // API METHODS

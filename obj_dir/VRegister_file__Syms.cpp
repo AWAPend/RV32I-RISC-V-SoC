@@ -1,16 +1,16 @@
 // Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Symbol table implementation internals
 
-#include "Valutb__pch.h"
-#include "Valutb.h"
-#include "Valutb___024root.h"
+#include "VRegister_file__pch.h"
+#include "VRegister_file.h"
+#include "VRegister_file___024root.h"
 
 // FUNCTIONS
-Valutb__Syms::~Valutb__Syms()
+VRegister_file__Syms::~VRegister_file__Syms()
 {
 }
 
-Valutb__Syms::Valutb__Syms(VerilatedContext* contextp, const char* namep, Valutb* modelp)
+VRegister_file__Syms::VRegister_file__Syms(VerilatedContext* contextp, const char* namep, VRegister_file* modelp)
     : VerilatedSyms{contextp}
     // Setup internal state of the Syms class
     , __Vm_modelp{modelp}
