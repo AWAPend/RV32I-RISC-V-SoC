@@ -22,14 +22,14 @@ module ALU(
             4'b0110: result = a >> b[4:0];   //SRL
             //shift right arithmetic, shift a right by b(0-31) bits, pad with sign bit(0 or 1)
             4'b0111: result = $signed(a) >>> b[4:0];    //SRA
-            //signed set less than, is a less than b?, yes = 1, no = 0
+            //set less than, is a less than b?, yes = 1, no = 0
             4'b1000: result = ($signed(a) < $signed(b)) ? 32'b1 : 32'b0;    //SLT
             //unsigned set less than
             4'b1001: result = (a < b) ? 32'b1 : 32'b0;  //SLTU
             default: result = 32'b0;
         endcase
     end
-        
+
     assign zero = (result == 32'b0);
 
 endmodule

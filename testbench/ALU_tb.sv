@@ -82,9 +82,9 @@ task automatic check(
         //shift right with pos sign bit(0)
         check(32'h7FFFFFFF, 1, 4'b0111, 32'h3FFFFFFF, "SRA positive", 1'b0);
 
-        //SLT,SLTU 
-        check(32'hFFFFFFFF, 1, 4'b1000, 1, "SLT: -1 < 1 (signed)", 1'b0);
-        check(32'hFFFFFFFF, 1, 4'b1001, 0, "SLTU: big_unsigned < 1 is false", 1'b1);
+        //SLT,SLTU  
+        check(32'hFFFFFFFF, 1, 4'b1000, 1, "SLT: -1 < 1 (signed)", 1'b0);   
+        check(32'hFFFFFFFF, 1, 4'b1001, 0, "SLTU: big_unsigned < 1 is false", 1'b1);    
 
         //default
         check(5, 5, 4'b1111, 0, "invalid select -> 0", 1'b1);
