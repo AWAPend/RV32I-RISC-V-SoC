@@ -1,0 +1,13 @@
+.section .text
+.global _start
+
+
+_start:
+    addi x1, x0, 5
+    addi x2, x0, 10
+    add x3, x1, x2
+
+loop:
+    beq x0, x0, loop
+
+

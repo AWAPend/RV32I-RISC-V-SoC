@@ -2,24 +2,18 @@
 
 module Instruction_mem(
     input clk,
-    input rst_n,
     input logic [31:0] pc_addr,
     output logic [31:0] instruction_data
 );
 
-    always #5 clk = ~clk;
-
     logic [31:0] register [0:1023];
-
-    always_ff @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
-            for (int i = 0; i < 1024; i++) begin
-                register[i] <= 32'b0;
-            end
-        end else begin
-            
-        end
+    
+    initial begin
+        $readmemh("RV32I-RISCV-SoC/software/Assembly_test.hex", register);
     end
 
+    //combinational read
+    //right shift by 2 = divide by 4, 4byte(32bits)/4 = 1(first word)
+    assign instruction_data <= register[pc_addr >> 2];
 
 endmodule
