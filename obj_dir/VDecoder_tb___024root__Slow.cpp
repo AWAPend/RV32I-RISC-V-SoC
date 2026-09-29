@@ -10,7 +10,6 @@ void VDecoder_tb___024root___ctor_var_reset(VDecoder_tb___024root* vlSelf);
 
 VDecoder_tb___024root::VDecoder_tb___024root(VDecoder_tb__Syms* symsp, const char* v__name)
     : VerilatedModule{v__name}
-    , __VdlySched{*symsp->_vm_contextp__}
     , vlSymsp{symsp}
  {
     // Reset structure values

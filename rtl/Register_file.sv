@@ -18,14 +18,14 @@ module Register_file(
 );
 
     logic [31:0] register [0:31];
-
+    
     //asynchronous 
     //x0 = 0 at all times, if any read = x0 addr, make it 0 otherwise write/update register 
     assign rs1_data = (rs1_addr == 5'd0) ? 32'b0 : register[rs1_addr];
     assign rs2_data = (rs2_addr == 5'd0) ? 32'b0 : register[rs2_addr];
     
     //synchronous
-    always_ff @(posedge clk) begin
+    always_ff @(posedge clk or negedge rst_n) begin
         //on active low reset, turn all registers 0
         if(!rst_n) begin
             for (int i = 0; i < 32; i++) begin

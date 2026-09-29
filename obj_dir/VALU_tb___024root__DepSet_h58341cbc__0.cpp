@@ -12,6 +12,7 @@ void VALU_tb___024root___eval_initial(VALU_tb___024root* vlSelf) {
     VALU_tb__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    VALU_tb___024root___eval_initial\n"); );
     // Body
+    vlSelf->__Vm_traceActivity[1U] = 1U;
     VALU_tb___024root___eval_initial__TOP__Vtiming__0(vlSelf);
 }
 
@@ -209,6 +210,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__0__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__0__name),
@@ -244,6 +246,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__1__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__1__name),
@@ -279,6 +282,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__2__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__2__name),
@@ -314,6 +318,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__3__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__3__name),
@@ -349,6 +354,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__4__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__4__name),
@@ -384,6 +390,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__5__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__5__name),
@@ -419,6 +426,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__6__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__6__name),
@@ -454,6 +462,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__7__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__7__name),
@@ -489,6 +498,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__8__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__8__name),
@@ -524,6 +534,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__9__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__9__name),
@@ -559,6 +570,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__10__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__10__name),
@@ -594,6 +606,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__11__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__11__name),
@@ -629,6 +642,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__12__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__12__name),
@@ -664,6 +678,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__13__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__13__name),
@@ -699,6 +714,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__14__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__14__name),
@@ -734,6 +750,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "testbench/ALU_tb.sv", 
                                        37);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
     if (VL_UNLIKELY((vlSelf->ALU_tb__DOT__result != __Vtask_ALU_tb__DOT__check__15__expected))) {
         VL_WRITEF("FAIL: %@ | a=%0# b=%0# sel=%b | expected=%0# got=%0#\n",
                   -1,&(__Vtask_ALU_tb__DOT__check__15__name),
@@ -761,6 +778,7 @@ VL_INLINE_OPT VlCoroutine VALU_tb___024root___eval_initial__TOP__Vtiming__0(VALU
               32,vlSelf->ALU_tb__DOT__pass_count,32,
               vlSelf->ALU_tb__DOT__fail_count);
     VL_FINISH_MT("testbench/ALU_tb.sv", 93, "");
+    vlSelf->__Vm_traceActivity[2U] = 1U;
 }
 
 VL_INLINE_OPT void VALU_tb___024root___act_sequent__TOP__0(VALU_tb___024root* vlSelf) {

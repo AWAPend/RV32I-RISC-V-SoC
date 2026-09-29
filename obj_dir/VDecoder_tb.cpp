@@ -60,9 +60,12 @@ void VDecoder_tb::eval_step() {
 
 //============================================================
 // Events and timing
-bool VDecoder_tb::eventsPending() { return !vlSymsp->TOP.__VdlySched.empty(); }
+bool VDecoder_tb::eventsPending() { return false; }
 
-uint64_t VDecoder_tb::nextTimeSlot() { return vlSymsp->TOP.__VdlySched.nextTimeSlot(); }
+uint64_t VDecoder_tb::nextTimeSlot() {
+    VL_FATAL_MT(__FILE__, __LINE__, "", "%Error: No delays in the design");
+    return 0;
+}
 
 //============================================================
 // Utilities

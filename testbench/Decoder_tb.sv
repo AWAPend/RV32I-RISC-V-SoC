@@ -1,8 +1,35 @@
 `timescale 1ns/1ps
 
 
+module Decoder_tb;
+    logic [31:0] instruction;
+    logic [6:0] opcode;
+    logic [2:0] funct3;
+    logic [6:0] funct7;
+    logic [4:0] rs1_addr;
+    logic [4:0] rs2_addr;
+    logic [4:0] write_addr;
+    logic [2:0] instruction_type;
 
+    int pass_count;
+    int fail_count;
 
+    Decoder dut(
+        .instruction(instruction),
+        .opcode(opcode),
+        .funct3(funct3),
+        .funct7(funct7),
+        .rs1_addr(rs1_addr),
+        .rs2_addr(rs2_addr),
+        .write_addr(write_addr),
+        .instruction_type(instruction_type)
+    );
+
+    
+
+endmodule
+
+/*
 module Decoder_tb;
     logic [31:0] instruction;
     logic [2:0] instruction_type;
@@ -12,19 +39,19 @@ module Decoder_tb;
     logic [4:0] write_addr;
     logic alu_src;
     logic write_enable;      //1 = write result back to register file
-    /* verilator lint_off UNUSED */
+    
     logic read_mem;          //1 = read from mem for loads
     logic write_mem;         //1 = write to mem for stores
     logic writeback_to_reg;  //0 = alu result writeback, 1 = writeback from mem
     logic branch;            //1 = branch instruction is true
-    /* verilator lint_off UNUSED */
+    
     logic jump;   
     logic [31:0] a;
     logic [31:0] b;
     logic [31:0] result;
-    /* verilator lint_off UNUSED */
+    
     logic zero;
-    /* verilator lint_off UNUSED */
+    
     logic [31:0] imm_out;
     logic clk;
     logic rst_n;
@@ -195,5 +222,5 @@ module Decoder_tb;
     end
 
 endmodule
-
+*/
 

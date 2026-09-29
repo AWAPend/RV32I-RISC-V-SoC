@@ -13,6 +13,9 @@ VL_ATTR_COLD void VALU_tb___024root___eval_static(VALU_tb___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    VALU_tb___024root___eval_static\n"); );
     // Body
     VALU_tb___024root___eval_static__TOP(vlSelf);
+    vlSelf->__Vm_traceActivity[2U] = 1U;
+    vlSelf->__Vm_traceActivity[1U] = 1U;
+    vlSelf->__Vm_traceActivity[0U] = 1U;
 }
 
 VL_ATTR_COLD void VALU_tb___024root___eval_static__TOP(VALU_tb___024root* vlSelf) {
@@ -147,4 +150,7 @@ VL_ATTR_COLD void VALU_tb___024root___ctor_var_reset(VALU_tb___024root* vlSelf) 
     vlSelf->ALU_tb__DOT__result = VL_RAND_RESET_I(32);
     vlSelf->ALU_tb__DOT__pass_count = 0;
     vlSelf->ALU_tb__DOT__fail_count = 0;
+    for (int __Vi0 = 0; __Vi0 < 3; ++__Vi0) {
+        vlSelf->__Vm_traceActivity[__Vi0] = 0;
     }
+}

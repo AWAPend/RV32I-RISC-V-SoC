@@ -20,8 +20,7 @@ int main(int argc, char** argv, char**) {
         // Evaluate model
         topp->eval();
         // Advance time
-        if (!topp->eventsPending()) break;
-        contextp->time(topp->nextTimeSlot());
+        contextp->timeInc(1);
     }
 
     if (!contextp->gotFinish()) {
